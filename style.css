@@ -1,0 +1,129 @@
+/* Fondo degradado para toda la página */
+body {
+  font-family: "Roboto", Arial, sans-serif; /* Tipografía moderna */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  color: #333;
+}
+
+/* Título del chatbot */
+h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Contenedor del chat */
+#chat {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding: 15px;
+    width: 80%;
+    max-width: 600px;
+    height: 500px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Separación entre los mensajes */
+  }
+  
+  /* Estilo de los mensajes del usuario */
+  .user-message {
+    color: #ffffff;
+    background: #027ede;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-left: auto; /* Asegura que esté alineado a la derecha */
+    text-align: left; /* Texto alineado dentro del fondo */
+    max-width: 80%; /* Ancho máximo del mensaje */
+    display: inline-block; /* Fondo ajustado al texto */
+    word-wrap: break-word; /* Permite que el texto se ajuste dentro del ancho máximo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombras suaves */
+  }
+  
+  /* Estilo de los mensajes del bot */
+  .bot-message {
+    color: #000000;
+    background: #d1e8e2;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-right: auto; /* Asegura que esté alineado a la izquierda */
+    text-align: left;
+    max-width: 80%;
+    display: inline-block;
+    word-wrap: break-word;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombras suaves */
+  }
+  
+
+/* Estilo de los mensajes de error */
+.error-message {
+  color: #ffffff; /* Texto en blanco */
+  background: #ff4c4c; /* Fondo rojo */
+  padding: 10px;
+  border-radius: 15px;
+  margin: 8px 0;
+  text-align: center;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+/* Input para escribir mensajes */
+input[type="text"] {
+  width: 70%;
+  max-width: 500px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem; /* Tamaño de fuente más grande */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+  outline: none;
+}
+
+/* Botón de enviar */
+button {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  background: #3d9764;
+  color: #ffffff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 15px; /* Separación del botón */
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #2b6b47;
+}
+
+/* Estilo del texto de costo estimado */
+#cost {
+  font-size: 1.1rem; /* Aumentado para mejor legibilidad */
+  color: #ffffff;
+  margin-top: 20px;
+  padding: 10px 30px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+  width: fit-content;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
